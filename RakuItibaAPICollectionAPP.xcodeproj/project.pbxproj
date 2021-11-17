@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		288DC6E0C9179FCC9D7FDF90 /* Pods_RakuItibaAPICollectionAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07337092A770878558326128 /* Pods_RakuItibaAPICollectionAPP.framework */; };
 		5419C59F274547FA00EF446A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C59E274547FA00EF446A /* AppDelegate.swift */; };
 		5419C5A1274547FA00EF446A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C5A0274547FA00EF446A /* SceneDelegate.swift */; };
 		5419C5A3274547FA00EF446A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C5A2274547FA00EF446A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07337092A770878558326128 /* Pods_RakuItibaAPICollectionAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RakuItibaAPICollectionAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5419C59B274547FA00EF446A /* RakuItibaAPICollectionAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RakuItibaAPICollectionAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5419C59E274547FA00EF446A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5419C5A0274547FA00EF446A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		5419C5A7274547FC00EF446A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5419C5AA274547FC00EF446A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5419C5AC274547FC00EF446A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2F4D8AE16A700CC64010F95 /* Pods-RakuItibaAPICollectionAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuItibaAPICollectionAPP.debug.xcconfig"; path = "Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		AB74D4E84FCD9A42F44365DD /* Pods-RakuItibaAPICollectionAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuItibaAPICollectionAPP.release.xcconfig"; path = "Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288DC6E0C9179FCC9D7FDF90 /* Pods_RakuItibaAPICollectionAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4148E907EF55FF0D0252DA88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2F4D8AE16A700CC64010F95 /* Pods-RakuItibaAPICollectionAPP.debug.xcconfig */,
+				AB74D4E84FCD9A42F44365DD /* Pods-RakuItibaAPICollectionAPP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		48C40366CAC6ED59A178771B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07337092A770878558326128 /* Pods_RakuItibaAPICollectionAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5419C592274547FA00EF446A = {
 			isa = PBXGroup;
 			children = (
 				5419C59D274547FA00EF446A /* RakuItibaAPICollectionAPP */,
 				5419C59C274547FA00EF446A /* Products */,
+				4148E907EF55FF0D0252DA88 /* Pods */,
+				48C40366CAC6ED59A178771B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5419C5AF274547FC00EF446A /* Build configuration list for PBXNativeTarget "RakuItibaAPICollectionAPP" */;
 			buildPhases = (
+				9BCCED9EED0ADF03F9EF32D1 /* [CP] Check Pods Manifest.lock */,
 				5419C597274547FA00EF446A /* Sources */,
 				5419C598274547FA00EF446A /* Frameworks */,
 				5419C599274547FA00EF446A /* Resources */,
+				8611C9D6E51E8A223C19681A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8611C9D6E51E8A223C19681A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BCCED9EED0ADF03F9EF32D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RakuItibaAPICollectionAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5419C597274547FA00EF446A /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		5419C5B0274547FC00EF446A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F4D8AE16A700CC64010F95 /* Pods-RakuItibaAPICollectionAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,12 +376,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5419C5B1274547FC00EF446A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB74D4E84FCD9A42F44365DD /* Pods-RakuItibaAPICollectionAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +393,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
