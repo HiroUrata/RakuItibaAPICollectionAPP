@@ -58,6 +58,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="resultCollectionView" destination="bkj-Xo-kO9" id="7Ur-XE-ASb"/>
+                        <outlet property="searchButton" destination="kZC-e8-Tzx" id="QVF-W6-nzi"/>
+                        <outlet property="searchTextField" destination="jdr-zg-bBm" id="0eV-Ov-CdX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,6 +14,8 @@
 		5419C5A6274547FA00EF446A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5419C5A4274547FA00EF446A /* Main.storyboard */; };
 		5419C5A8274547FC00EF446A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5419C5A7274547FC00EF446A /* Assets.xcassets */; };
 		5419C5AB274547FC00EF446A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5419C5A9274547FC00EF446A /* LaunchScreen.storyboard */; };
+		5419C5B727454ACD00EF446A /* ResultItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C5B527454ACD00EF446A /* ResultItemListCell.swift */; };
+		5419C5B827454ACD00EF446A /* ResultItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5419C5B627454ACD00EF446A /* ResultItemListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5419C5A7274547FC00EF446A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5419C5AA274547FC00EF446A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5419C5AC274547FC00EF446A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5419C5B527454ACD00EF446A /* ResultItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultItemListCell.swift; sourceTree = "<group>"; };
+		5419C5B627454ACD00EF446A /* ResultItemListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultItemListCell.xib; sourceTree = "<group>"; };
 		A2F4D8AE16A700CC64010F95 /* Pods-RakuItibaAPICollectionAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuItibaAPICollectionAPP.debug.xcconfig"; path = "Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		AB74D4E84FCD9A42F44365DD /* Pods-RakuItibaAPICollectionAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuItibaAPICollectionAPP.release.xcconfig"; path = "Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +52,6 @@
 				A2F4D8AE16A700CC64010F95 /* Pods-RakuItibaAPICollectionAPP.debug.xcconfig */,
 				AB74D4E84FCD9A42F44365DD /* Pods-RakuItibaAPICollectionAPP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,13 +86,39 @@
 			children = (
 				5419C59E274547FA00EF446A /* AppDelegate.swift */,
 				5419C5A0274547FA00EF446A /* SceneDelegate.swift */,
+				5419C5B4274549DF00EF446A /* Model */,
+				5419C5B3274549DB00EF446A /* View */,
+				5419C5B2274549C700EF446A /* Controller */,
 				5419C5A2274547FA00EF446A /* ViewController.swift */,
 				5419C5A4274547FA00EF446A /* Main.storyboard */,
 				5419C5A7274547FC00EF446A /* Assets.xcassets */,
 				5419C5A9274547FC00EF446A /* LaunchScreen.storyboard */,
 				5419C5AC274547FC00EF446A /* Info.plist */,
+				5419C5B527454ACD00EF446A /* ResultItemListCell.swift */,
+				5419C5B627454ACD00EF446A /* ResultItemListCell.xib */,
 			);
 			path = RakuItibaAPICollectionAPP;
+			sourceTree = "<group>";
+		};
+		5419C5B2274549C700EF446A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5419C5B3274549DB00EF446A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5419C5B4274549DF00EF446A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5419C5AB274547FC00EF446A /* LaunchScreen.storyboard in Resources */,
+				5419C5B827454ACD00EF446A /* ResultItemListCell.xib in Resources */,
 				5419C5A8274547FC00EF446A /* Assets.xcassets in Resources */,
 				5419C5A6274547FA00EF446A /* Main.storyboard in Resources */,
 			);
@@ -208,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5419C5A3274547FA00EF446A /* ViewController.swift in Sources */,
+				5419C5B727454ACD00EF446A /* ResultItemListCell.swift in Sources */,
 				5419C59F274547FA00EF446A /* AppDelegate.swift in Sources */,
 				5419C5A1274547FA00EF446A /* SceneDelegate.swift in Sources */,
 			);
