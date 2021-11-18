@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
     
-    
+    private var cellContentsArray = [ItemResultDetailModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,8 @@ class ViewController: UIViewController {
 extension ViewController:UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        
+        return cellContentsArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

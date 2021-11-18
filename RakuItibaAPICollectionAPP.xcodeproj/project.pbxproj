@@ -17,6 +17,7 @@
 		5419C5B727454ACD00EF446A /* ResultItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C5B527454ACD00EF446A /* ResultItemListCell.swift */; };
 		5419C5B827454ACD00EF446A /* ResultItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5419C5B627454ACD00EF446A /* ResultItemListCell.xib */; };
 		5419C5BA27463C9C00EF446A /* ItemResultDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C5B927463C9C00EF446A /* ItemResultDetailModel.swift */; };
+		5419C5BC27463D3200EF446A /* AlamofireProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C5BB27463D3200EF446A /* AlamofireProcess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5419C5B527454ACD00EF446A /* ResultItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultItemListCell.swift; sourceTree = "<group>"; };
 		5419C5B627454ACD00EF446A /* ResultItemListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultItemListCell.xib; sourceTree = "<group>"; };
 		5419C5B927463C9C00EF446A /* ItemResultDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResultDetailModel.swift; sourceTree = "<group>"; };
+		5419C5BB27463D3200EF446A /* AlamofireProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireProcess.swift; sourceTree = "<group>"; };
 		A2F4D8AE16A700CC64010F95 /* Pods-RakuItibaAPICollectionAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuItibaAPICollectionAPP.debug.xcconfig"; path = "Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		AB74D4E84FCD9A42F44365DD /* Pods-RakuItibaAPICollectionAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RakuItibaAPICollectionAPP.release.xcconfig"; path = "Target Support Files/Pods-RakuItibaAPICollectionAPP/Pods-RakuItibaAPICollectionAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5419C5B927463C9C00EF446A /* ItemResultDetailModel.swift */,
+				5419C5BB27463D3200EF446A /* AlamofireProcess.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				5419C5BA27463C9C00EF446A /* ItemResultDetailModel.swift in Sources */,
 				5419C5B727454ACD00EF446A /* ResultItemListCell.swift in Sources */,
 				5419C59F274547FA00EF446A /* AppDelegate.swift in Sources */,
+				5419C5BC27463D3200EF446A /* AlamofireProcess.swift in Sources */,
 				5419C5A1274547FA00EF446A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
