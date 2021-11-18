@@ -20,4 +20,17 @@ class ResultItemListCell: UICollectionViewCell {
         // Initialization code
     }
 
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        mediumImageView.image = UIImage(named: "")
+        itemNameLabel.text = ""
+        itemPriceLabel.text = ""
+        shopNameLabel.text = ""
+    }
 }

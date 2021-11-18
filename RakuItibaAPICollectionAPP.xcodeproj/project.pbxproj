@@ -89,13 +89,8 @@
 				5419C5B4274549DF00EF446A /* Model */,
 				5419C5B3274549DB00EF446A /* View */,
 				5419C5B2274549C700EF446A /* Controller */,
-				5419C5A2274547FA00EF446A /* ViewController.swift */,
-				5419C5A4274547FA00EF446A /* Main.storyboard */,
-				5419C5A7274547FC00EF446A /* Assets.xcassets */,
 				5419C5A9274547FC00EF446A /* LaunchScreen.storyboard */,
 				5419C5AC274547FC00EF446A /* Info.plist */,
-				5419C5B527454ACD00EF446A /* ResultItemListCell.swift */,
-				5419C5B627454ACD00EF446A /* ResultItemListCell.xib */,
 			);
 			path = RakuItibaAPICollectionAPP;
 			sourceTree = "<group>";
@@ -103,6 +98,7 @@
 		5419C5B2274549C700EF446A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5419C5A2274547FA00EF446A /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -110,6 +106,10 @@
 		5419C5B3274549DB00EF446A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5419C5A4274547FA00EF446A /* Main.storyboard */,
+				5419C5A7274547FC00EF446A /* Assets.xcassets */,
+				5419C5B527454ACD00EF446A /* ResultItemListCell.swift */,
+				5419C5B627454ACD00EF446A /* ResultItemListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
