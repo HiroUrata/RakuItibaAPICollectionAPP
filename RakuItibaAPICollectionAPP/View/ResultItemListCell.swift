@@ -17,7 +17,7 @@ class ResultItemListCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
 
     required init?(coder: NSCoder) {

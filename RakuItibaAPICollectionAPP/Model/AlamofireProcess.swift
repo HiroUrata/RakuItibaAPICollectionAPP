@@ -30,12 +30,19 @@ extension AlamofireProcess{
                 let getdata = JSON(response.data as Any)
                 resultDetailDatas = []
                 
-                for dataCount in 0..<getdata["Items"].count{
+                print(getdata)
+                
+                for dataCount in 0..<30{
                     
-                    if let getMediumImageUrl = getdata["Items"][dataCount]["Item"]["mediumImageUrls"][0].string,
+                    if let getMediumImageUrl = getdata["Items"][dataCount]["Item"]["mediumImageUrls"][0]["imageUrl"].string,
                        let getItemName = getdata["Items"][dataCount]["Item"]["itemName"].string,
                        let getItemPrice = getdata["Items"][dataCount]["Item"]["itemPrice"].int,
-                       let getShopName =  getdata["Items"][dataCount]["shopName"].string{
+                       let getShopName =  getdata["Items"][dataCount]["Item"]["shopName"].string{
+                        
+                        print(getMediumImageUrl)
+                        print(getItemName)
+                        print(getItemPrice)
+                        print(getShopName)
                         
                         resultDetailDatas.append(ItemResultDetailModel(mediumImageUrl: getMediumImageUrl,
                                                                        itemName: getItemName,
@@ -52,5 +59,16 @@ extension AlamofireProcess{
             }
         }
         
+    }
+}
+
+extension String{
+
+    var urlEncoded:String{
+
+        let charset = CharacterSet.alphanumerics.union(.init(charactersIn: "/?-._~"))
+        let remove = removingPercentEncoding ?? self
+
+        return remove.addingPercentEncoding(withAllowedCharacters: charset) ?? remove
     }
 }

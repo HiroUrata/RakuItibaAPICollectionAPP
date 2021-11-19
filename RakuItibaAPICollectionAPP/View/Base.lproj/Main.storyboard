@@ -17,25 +17,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZC-e8-Tzx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZC-e8-Tzx">
                                 <rect key="frame" x="322" y="807" width="72" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="lfW-2z-V0E"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="search">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZW-wI-PlB"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdr-zg-bBm">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdr-zg-bBm">
                                 <rect key="frame" x="20" y="807" width="278" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="6zi-6E-elw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bkj-Xo-kO9">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bkj-Xo-kO9">
                                 <rect key="frame" x="0.0" y="87" width="414" height="684"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qhQ-la-2Fx">
                                     <size key="itemSize" width="128" height="128"/>
@@ -57,6 +63,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jdr-zg-bBm" firstAttribute="top" secondItem="bkj-Xo-kO9" secondAttribute="bottom" constant="36" id="1aU-sK-de4"/>
+                            <constraint firstItem="kZC-e8-Tzx" firstAttribute="leading" secondItem="jdr-zg-bBm" secondAttribute="trailing" constant="24" id="2Ep-a0-cS4"/>
+                            <constraint firstItem="jdr-zg-bBm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3zF-ab-xLx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kZC-e8-Tzx" secondAttribute="bottom" constant="21" id="O8L-qC-7Pt"/>
+                            <constraint firstItem="kZC-e8-Tzx" firstAttribute="top" secondItem="bkj-Xo-kO9" secondAttribute="bottom" constant="36" id="OdC-rw-m2N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jdr-zg-bBm" secondAttribute="bottom" constant="21" id="R1O-i9-JoQ"/>
+                            <constraint firstItem="bkj-Xo-kO9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S2I-Du-gtP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kZC-e8-Tzx" secondAttribute="trailing" constant="20" id="TT1-jP-gVp"/>
+                            <constraint firstItem="bkj-Xo-kO9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="t6h-p1-SPi"/>
+                            <constraint firstItem="bkj-Xo-kO9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wqG-94-bcw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="resultCollectionView" destination="bkj-Xo-kO9" id="7Ur-XE-ASb"/>
